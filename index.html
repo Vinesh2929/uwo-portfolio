@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinesh's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <style>
+        /* Add CSS styles for the top navigation bar */
+        header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+        }
+
+        /* Add some space below the header to prevent content overlap */
+        body {
+            padding-top: 70px; /* Adjust this value as needed */
+        }
+
+        /* Add CSS styles for the footer */
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Style the sections */
+        section {
+            padding: 20px;
+            margin: 40px 0;
+        }
+
+        /* Style the image */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto; /* Center the image horizontally */
+        }
+
+        /* Style the button */
+        .btn {
+            display: inline-block;
+            background-color: #007BFF; /* Blue color */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        /* Center the button */
+        .btn-center {
+            text-align: center;
+        }
+
+        /* Style the work experience cards */
+        .work-experience-card {
+            background-color: #f5f5f5;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .work-experience-card h3 {
+            font-size: 18px;
+            margin-top: 0;
+        }
+
+        .work-experience-card p {
+            margin: 5px 0;
+        }
+
+        /* Style the About Me characteristics */
+        .characteristics {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .characteristic {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .characteristic i {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .characteristic h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <!-- Top Navigation Bar with Name centered -->
+    <nav>
+        <h1>VINESH NATHAN</h1>
+        <ul>
+            <li><a href="#hero-section">Home</a></li>
+            <li><a href="#about-section">About Me</a></li>
+            <li><a href="#work-experience-section">Work Experience</a></li>
+            <li><a href="#contact-section">Contact Me</a></li>
+            <!-- Add a new menu item for the Hero Section -->
+            <li><a href="#hero-section">Hero Section</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <!-- Step 3: Hero Section -->
+<section id="hero-section">
+    <h2>Hero Section</h2> <!-- Add this line -->
+    <img src="/Users/vineshnathan/Desktop/suit photo.jpeg" alt="Hero Image" width="400" height="500">
+    <div class="btn-center">
+        <a href="#" class="btn">Learn More</a>
+    </div>
+</section>
+    <!-- Step 4: About Me Section -->
+    <section id="about-section">
+        <h2>About Me</h2>
+        <h2 style="text-align: center;">About Me</h2>
+        <div class="characteristics">
+            <div class="characteristic">
+                <i class="fas fa-code"></i>
+                <h3>Web Developer</h3>
+                <p>I am a passionate web developer with a love for coding.</p>
+            </div>
+            <div class="characteristic">
+                <i class="fas fa-paint-brush"></i>
+                <h3>Designer</h3>
+                <p>I have a creative eye for design and enjoy crafting visually appealing websites.</p>
+            </div>
+            <div class="characteristic">
+                <i class="fas fa-lightbulb"></i>
+                <h3>Problem Solver</h3>
+                <p>I thrive on solving complex problems and finding innovative solutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Step 5: Work Experience Section -->
+    <section id="work-experience-section">
+        <h2>Work Experience</h2>
+
+        <!-- Work Experience Card 1 -->
+        <div class="work-experience-card">
+            <h3>Design Prototyping</h3>
+            <p>Acumen Academy</p>
+            <p>2021</p>
+            <p>Completed design prototyping course with Acumen Academy. Designed and built an efficient storage system for usage in a nearby orphanage for underprivileged children.</p>
+        </div>
+
+        <!-- Work Experience Card 2 -->
+        <div class="work-experience-card">
+            <h3>Game Development and Coding Internship</h3>
+            <p>June Games, Pune, India</p>
+            <p>June 2020</p>
+            <p>Completed a 2-week internship with June Games, a leading gaming start-up. Gained practical experience in game development and coding.</p>
+        </div>
+
+        <!-- Add more work experience cards as needed -->
+    </section>
+
+    <!-- Step 6: Contact Me Section -->
+    <section id="contact-section">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <!-- Footer at the end of the page -->
+    <footer>
+        Vinesh's Portfolio
+    </footer>
+</body>
+</html>
